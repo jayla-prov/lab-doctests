@@ -586,13 +586,9 @@ def sum_between(a, b):
     >>> sum_between(0, 123456)
     7620753696
     '''
-    total = 0
-    for i in range(a, b + 1):
-        total += i
-    else:
-        for i in range(b, a + 1):
-            total += i
-    return total
+    if a > b:
+        a, b = b, a
+    return sum(range(a, b + 1))
 
 ################################################################################
 # PART III:
