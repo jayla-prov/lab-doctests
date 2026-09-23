@@ -1,4 +1,5 @@
 #!/bin/python
+# Doctest run
 
 '''
 The purpose of this file is to help students practice writing functions and using doctests.
